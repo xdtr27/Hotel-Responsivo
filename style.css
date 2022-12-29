@@ -1,0 +1,339 @@
+@import url(./index.html);
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+}
+.container {
+    padding: 0 1rem;
+}
+
+/*==================================*/
+header {
+    width: 100%;
+}
+
+#header-line-1 {
+    display: flex;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+}
+#header-line-1 #logo {
+    display: flex;
+    gap: .3rem;
+    width: 100%;
+}
+#header-line-1 #search-icon {
+    width: 100%;
+}
+#header-line-1 h2 {
+    color: red;
+}
+#header-line-1 img {
+  width: 1.5rem;
+}
+#hd2 {
+    display: none;
+}
+/*====================================*/
+
+.header-line-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-line-2 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    background-color: black;
+}
+.header-line-2 .button:hover{
+    background-color: #c50f37;
+    transition: .2s;
+  
+}
+.header-line-2 .button p {
+    font-size: 1rem;
+    color: white;
+}
+.header-line-2 .icon {
+    width: 1rem;
+}
+
+/*========= MAIN ============*/
+#main-one {
+  padding: 2.5rem 1rem;
+}
+#main-one h2 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+#main-one form p {
+    display: flex;
+    flex-direction: column;
+}
+#main-one form p input {
+    padding: .6rem;
+    border: 1px solid rgb(207, 205, 205);
+    margin-bottom: .5rem;
+}
+#main-one-btn{
+    margin-top: 1rem;
+    padding: .7rem;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: .95rem;
+}
+
+#main-one-btn:hover {
+    background-color: rgb(80, 80, 80);
+    cursor: pointer;
+    transition: .2s;
+}
+/*------------------------------*/
+#main-two {
+    background-color: rgb(233, 232, 232);
+    padding: 4rem 1rem 2.5rem;
+}
+#main-two h2 {
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+/*images*/
+#images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+#images #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+#images .img-places {
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+#cinqueterre {
+  background-image: url(./imagens/cinqueterre.jpg);
+}
+#new-york {
+  background-image: url(./imagens/newyork.jpg);
+}
+#san-francisco {
+  background-image: url(./imagens/sanfran.jpg);
+}
+#pisa {
+  background-image: url(./imagens/london.jpg)
+}
+#paris {
+  background-image: url(./imagens/paris.jpg)
+}
+
+/*-----------------------------------------*/
+#main-three {
+  background-color: rgb(233, 232, 232);   
+}
+#main-three > h2 {
+    margin-bottom: 2rem;
+}
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+#main-three #cards .card {
+  background-color: white; 
+}
+/* text */
+#cards .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+#main-three span {
+  color: gray;
+}
+#main-three a {
+    color: black;
+}
+/*card-images*/
+.card .card-image {
+    background-size: cover
+    ;
+    height: 150px;
+    width: 100%;
+}
+#norway {
+  background-image: url(./imagens/ocean.jpg);
+}
+#austria {
+  background-image: url(./imagens/mountains.jpg);
+}
+
+/*------- CONTACT --------*/
+#contact-card {
+  color: white;
+  background-color: rgb(100, 99, 99);
+  width: 100%;
+  padding: 3rem 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+#contact-card h2 {
+    font-weight: 300;
+    font-size: 2.1rem;
+}
+#contact-card p {
+    margin: 1.5rem 0;
+}
+#contact-card #form1 {
+    display: flex;
+    flex-direction: column;
+}
+#contact-card #form1 label {
+    font-size: 1rem;
+}
+#contact-card #form1 input {
+    padding: .5rem;
+}
+#contact-card #form1 button {
+    width: fit-content;
+    padding: .8rem 1.3rem;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(240, 108, 108);
+    margin-top: 1rem;
+}
+#contact-card #form1 button:hover {
+    background-color: rgb(243, 146, 146);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* form 2 */
+#form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(233, 232, 232) ;
+}
+#form2 input{
+    padding: 1rem;
+    border: none;
+}
+#form2 button {
+    padding: 1rem;
+    width: fit-content;
+    border: none;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+#form2 button:hover {
+    background-color: rgb(78, 78, 78);
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*=========== FOOTER =================*/
+footer {
+    background-color: rgb(233, 232, 232) ;
+}
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer div {
+    margin-bottom: 3rem;
+}
+#footer p {
+    margin-bottom: 2rem;
+}
+#footer a {
+  color: black;
+  border-bottom: 1px solid black;
+ 
+}
+#footer #social-media img {
+  width: 1.1rem;
+}
+
+/*-------------- TABLET ------------------*/
+
+@media (min-width: 768px) {
+    #main-one {
+        background-image: url(./imagens/london.jpg);
+        padding: 2rem 8rem 2.5rem;
+    }
+    #main-one form {
+        background-color: white;
+        padding: 1rem;
+    }
+    #hd1 {
+      display: none;
+    }
+    #hd2 {
+        display: flex;
+    }
+    /*------------------------------*/
+    #images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    #images .img-places {
+        height: 27rem;
+    }
+    #images #grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    #images #grid .img-places {
+        height: 13rem;
+    }
+   
+    /*---------------*/
+    #main-three #cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ------------ DESKTOP -------------------*/
+@media (min-width: 1366px) {
+    #main-one h2 {
+        text-align: left;
+    }
+    
+    #main-one-inputs {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    #main-one-inputs p {
+        width: 100%;
+    }
+}
